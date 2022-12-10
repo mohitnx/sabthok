@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 const app = express();
 
 const DB = 'mongodb+srv://mohit:RuhSvh8epzAdGKJ@cluster0.w2ad6me.mongodb.net/?retryWrites=true&w=majority';
@@ -42,7 +42,7 @@ console.log(e);
 //while testing from actual device, both server(laptop) and phone should be in same 
 //network and we should specify the laptops/servers ip instead of localhost or 127.0.0.1
 
-app.listen(PORT,"192.168.1.65", ()=>{
+app.listen(PORT, ()=>{
     
     console.log(`connceted at port tt ${PORT}`);
 });

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-String uri = 'http://192.168.1.65:8000';
+String uri = 'https://sabthok-app-test3.onrender.com';
 
 class GlobalVariables {
   static const appBarGradient = LinearGradient(
